@@ -1,0 +1,257 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background:#f4f4f4;
+}
+
+
+
+header{
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+
+
+.hero{
+height:90vh;
+background:url("../images/hero.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+color:white;
+padding:40px;
+border-radius:10px;
+text-align:center;
+animation:fadeIn 2s;
+}
+
+.hero button{
+margin-top:15px;
+padding:12px 25px;
+border:none;
+background:gold;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+
+
+.features{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:60px;
+background:white;
+}
+
+.feature{
+text-align:center;
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-10px);
+}
+
+.feature i{
+font-size:40px;
+color:gold;
+margin-bottom:10px;
+}
+
+
+
+.about{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+padding:60px;
+}
+
+.about img{
+width:400px;
+border-radius:10px;
+}
+
+.about-text{
+max-width:400px;
+}
+
+
+
+.rooms{
+padding:60px;
+text-align:center;
+}
+
+.room-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.room{
+background:white;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.room:hover{
+transform:scale(1.05);
+}
+
+.room img{
+width:250px;
+border-radius:10px;
+}
+
+.room button{
+margin-top:10px;
+padding:10px 20px;
+background:gold;
+border:none;
+cursor:pointer;
+}
+
+
+
+.gallery{
+padding:60px;
+text-align:center;
+}
+
+.gallery-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+
+
+.contact{
+flex: 1;
+padding:60px;
+text-align:center;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+width:300px;
+padding:10px;
+}
+
+.contact button{
+padding:10px 20px;
+background:gold;
+border:none;
+cursor:pointer;
+}
+
+
+
+footer{
+ background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.social-icons i{
+margin:10px;
+font-size:20px;
+cursor:pointer;
+}
+
+
+
+.page-title{
+margin-bottom:20px;
+}
+
+
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:gold;
+color:black;
+text-decoration:none;
+border-radius:5px;
+font-weight: bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:darkgoldenrod;
+color:white;
+}
+
+.hero .btn{
+margin-top:20px;
+}
