@@ -326,25 +326,6 @@ body.dark .message-time {
   background: #1a1a1a;
 }
 
-.btn {
-  padding: 12px 25px;
-  background: linear-gradient(90deg, #0f3460, #16213e);
-  color: white;
-  border: 2px solid #ffd700;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: bold;
-  box-shadow: 0 4px 15px rgba(15, 52, 96, 0.3);
-}
-
-
-.btn:hover {
-  background: linear-gradient(90deg, #16213e, #0f3460);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(15, 52, 96, 0.5);
-}
-
 @media (max-width: 768px) {
   .dashboard-header {
     flex-direction: column;

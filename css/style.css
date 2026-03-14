@@ -490,12 +490,13 @@ footer p {
 
 .btn {
   display: inline-block;
-  padding: 8px 20px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  padding: 10px 24px;
+  background: linear-gradient(120deg, #ffd700, #ffed4e);
   color: #1a1a2e;
   text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
   border: 2px solid transparent;
@@ -503,9 +504,9 @@ footer p {
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, #ffed4e, #ffd700);
+  background: linear-gradient(120deg, #ffed4e, #ffd700);
   color: #1a1a2e;
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
   border: 2px solid #1a1a2e;
 }
