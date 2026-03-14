@@ -311,6 +311,21 @@ body.dark .dashboard-header {
   border-bottom-color: #5a4a0a;
 }
 
+body.dark .dashboard-header h1,
+body.dark .message-header strong,
+body.dark .message-email strong,
+body.dark .message-room strong,
+body.dark .message-body strong {
+  color: #f2d27a;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+
+body.dark .message-time {
+  color: #d0d0d0;
+  background: #1a1a1a;
+}
+
 .btn {
   padding: 12px 25px;
   background: linear-gradient(90deg, #0f3460, #16213e);
