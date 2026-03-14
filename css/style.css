@@ -196,7 +196,7 @@ nav a:hover {
   justify-content: center;
   gap: 60px;
   padding: 60px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
 }
 
 .about img {
@@ -218,16 +218,12 @@ nav a:hover {
 
 .about-text h2 {
   font-size: 32px;
-  color: #1a1a2e;
+  color: #ffd36a;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #1a1a2e, #0f3460);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .about-text p {
-  color: #555;
+  color: #e6e6e6;
   line-height: 1.8;
   font-size: 18px;
 }
