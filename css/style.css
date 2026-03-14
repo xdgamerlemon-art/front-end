@@ -196,7 +196,7 @@ nav a:hover {
   justify-content: center;
   gap: 60px;
   padding: 60px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .about img {
@@ -218,14 +218,22 @@ nav a:hover {
 
 .about-text h2 {
   font-size: 32px;
-  color: #ffd36a;
+  color: #1a1a2e;
   margin-bottom: 20px;
 }
 
 .about-text p {
-  color: #e6e6e6;
+  color: #555;
   line-height: 1.8;
   font-size: 18px;
+}
+
+body.dark .about-text h2 {
+  color: #000000;
+}
+
+body.dark .about-text p {
+  color: #000000;
 }
 
 .rooms {
