@@ -1,90 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Hotel | Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Hotel | Home</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Luxury Hotel</div>
 
-<header>
-    <div class="logo">Luxury Hotel</div>
-
-    <nav>
+      <nav>
         <a href="index.html">Home</a>
         <a href="rooms.html">Rooms</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
-    </nav>
-</header>
+      </nav>
+      <button id="theme-toggle" class="btn">Dark Mode</button>
+    </header>
 
-<section class="hero">
-    <div class="hero-content">
+    <section class="hero">
+      <div class="hero-content container">
         <h1>Welcome to Luxury Hotel</h1>
         <p>Experience elegance, comfort, and premium service</p>
         <a href="rooms.html" class="btn">Book Now</a>
-    </div>
-</section>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </section>
 
-<section class="features">
+    <section class="features">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature h-100">
+              <i class="fa-solid fa-bed"></i>
+              <h3>Luxury Rooms</h3>
+              <p>Modern and comfortable rooms</p>
+            </div>
+          </div>
 
-<div class="feature">
-<i class="fa-solid fa-bed"></i>
-<h3>Luxury Rooms</h3>
-<p>Modern and comfortable rooms</p>
-</div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature h-100">
+              <i class="fa-solid fa-wifi"></i>
+              <h3>Free WiFi</h3>
+              <p>High-speed internet access</p>
+            </div>
+          </div>
 
-<div class="feature">
-<i class="fa-solid fa-wifi"></i>
-<h3>Free WiFi</h3>
-<p>High-speed internet access</p>
-</div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature h-100">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Restaurant</h3>
+              <p>Delicious international food</p>
+            </div>
+          </div>
 
-<div class="feature">
-<i class="fa-solid fa-utensils"></i>
-<h3>Restaurant</h3>
-<p>Delicious international food</p>
-</div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature h-100">
+              <i class="fa-solid fa-swimming-pool"></i>
+              <h3>Swimming Pool</h3>
+              <p>Relax and enjoy your stay</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="feature">
-<i class="fa-solid fa-swimming-pool"></i>
-<h3>Swimming Pool</h3>
-<p>Relax and enjoy your stay</p>
-</div>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-5 text-center">
+            <img src="images/hotel.jpg" class="img-fluid" />
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="about-text">
+              <h2>About Our Hotel</h2>
+              <p>
+                At Luxury Hotel, timeless elegance meets modern comfort. Our
+                refined suites, curated amenities, and attentive service create
+                an elevated stay for every guest. Perfectly positioned in the
+                heart of the city, we blend convenience with serenity to make
+                every visit truly memorable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <footer>
+      <p>© 2026 Luxury Hotel | All Rights Reserved</p>
 
-<section class="about">
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
 
-<img src="images/hotel.jpg">
+      <a href="admin.html" class="admin-link"
+        ><i class="fa-solid fa-lock"></i
+      ></a>
+    </footer>
 
-<div class="about-text">
-<h2>About Our Hotel</h2>
-<p>
-Luxury Hotel offers world-class service, beautiful rooms,
-and unforgettable experiences. Located in the heart of the city.
-</p>
-</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-</section>
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
 
-<footer>
+      
+      function applyTheme() {
+        const isDark = localStorage.getItem("theme") === "dark";
+        if (isDark) {
+          document.body.classList.add("dark");
+          themeToggle.textContent = "Light Mode";
+        } else {
+          document.body.classList.remove("dark");
+          themeToggle.textContent = "Dark Mode";
+        }
+      }
 
-<p>© 2026 Luxury Hotel | All Rights Reserved</p>
+      
+      applyTheme();
 
-<div class="social-icons">
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-twitter"></i>
-</div>
-
-</footer>
-
-</body>
+      themeToggle.addEventListener("click", () => {
+        const isDark = document.body.classList.toggle("dark");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        themeToggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+      });
+    </script>
+  </body>
 </html>
