@@ -432,22 +432,6 @@ body.dark .about-text p {
   background: linear-gradient(135deg, #faf9f6 0%, #f0f4ff 100%);
 }
 
-.contact-tip-toggle {
-  display: none;
-  position: fixed;
-  left: 16px;
-  top: 160px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  background: linear-gradient(120deg, #ffd700, #ffed4e);
-  color: #1a1a2e;
-  font-weight: 800;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  z-index: 1100;
-}
-
 .contact .page-title {
   font-size: 36px;
   color: #1a1a2e;
@@ -459,6 +443,8 @@ body.dark .about-text p {
 }
 
 .contact-tip {
+  max-width: 640px;
+  margin: 0 auto 30px;
   text-align: left;
   padding: 18px 22px;
   border-radius: 14px;
@@ -949,33 +935,6 @@ body.dark footer {
     max-width: 300px;
   }
 
-  .contact-tip-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contact-tip {
-    position: fixed;
-    left: 72px;
-    top: 120px;
-    width: calc(100% - 88px);
-    max-width: 320px;
-    margin: 0;
-    opacity: 0;
-    transform: translateX(-120%);
-    pointer-events: none;
-    z-index: 1050;
-    animation: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .contact-tip.is-open {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-  }
-
   footer {
     padding: 20px;
     text-align: center;
@@ -1189,12 +1148,6 @@ body.dark .contact-tip-title {
 
 body.dark .contact-tip p {
   color: #cfcfcf;
-}
-
-body.dark .contact-tip-toggle {
-  background: linear-gradient(120deg, #5a4a0a, #6a5a0a);
-  color: #ffffff;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
 body.dark .contact input,
