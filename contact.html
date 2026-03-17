@@ -37,16 +37,8 @@
 
     <section class="contact">
       <div class="container">
-        <button
-          type="button"
-          class="contact-tip-toggle"
-          aria-controls="contact-tip"
-          aria-expanded="false"
-        >
-          ?
-        </button>
         <div class="row g-4 align-items-start">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 tip-col">
             <div class="contact-tip" id="contact-tip">
               <div class="contact-tip-title">
                 <i class="fa-solid fa-circle-info"></i>
@@ -131,28 +123,6 @@
         themeToggle.textContent = document.body.classList.contains("dark")
           ? "Light Mode"
           : "Dark Mode";
-      }
-
-      const tipToggle = document.querySelector(".contact-tip-toggle");
-      const tipPanel = document.getElementById("contact-tip");
-
-      if (tipToggle && tipPanel) {
-        tipToggle.addEventListener("click", (event) => {
-          event.stopPropagation();
-          const isOpen = tipPanel.classList.toggle("is-open");
-          tipToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-        });
-
-        tipPanel.addEventListener("click", (event) => {
-          event.stopPropagation();
-        });
-
-        document.addEventListener("click", () => {
-          if (tipPanel.classList.contains("is-open")) {
-            tipPanel.classList.remove("is-open");
-            tipToggle.setAttribute("aria-expanded", "false");
-          }
-        });
       }
 
       document

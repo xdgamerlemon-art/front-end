@@ -432,6 +432,15 @@ body.dark .about-text p {
   background: linear-gradient(135deg, #faf9f6 0%, #f0f4ff 100%);
 }
 
+.contact .row {
+  justify-content: flex-start;
+}
+
+.tip-col {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .contact .page-title {
   font-size: 36px;
   color: #1a1a2e;
@@ -443,8 +452,8 @@ body.dark .about-text p {
 }
 
 .contact-tip {
-  max-width: 640px;
-  margin: 0 auto 30px;
+  width: 100%;
+  margin: 0;
   text-align: left;
   padding: 18px 22px;
   border-radius: 14px;
